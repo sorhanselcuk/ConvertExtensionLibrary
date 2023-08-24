@@ -1,0 +1,10 @@
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\bin\Debug\netcoreapp3.1\ConvertExtensionLibrary.deps.json
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\bin\Debug\netcoreapp3.1\ConvertExtensionLibrary.dll
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\bin\Debug\netcoreapp3.1\ConvertExtensionLibrary.pdb
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.csproj.AssemblyReference.cache
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.AssemblyInfoInputs.cache
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.AssemblyInfo.cs
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.csproj.CoreCompileInputs.cache
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.dll
+C:\Users\oselcuk\source\repos\ConvertExtensionLibrary\ConvertExtensionLibrary\obj\Debug\netcoreapp3.1\ConvertExtensionLibrary.pdb
