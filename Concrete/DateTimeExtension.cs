@@ -30,7 +30,7 @@ namespace ConvertExtensionLibrary.Concrete
         {
             foreach(var character in value)
             {
-                if(character < 0 || character > 9)
+                if(character < 48 || character > 57)
                 {
                     return false;
                 }
