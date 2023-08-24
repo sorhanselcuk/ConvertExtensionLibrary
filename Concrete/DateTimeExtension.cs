@@ -12,10 +12,10 @@ namespace ConvertExtensionLibrary.Concrete
                 throw new IncorrectJulianFormatException("Julian date format should be minimum 6 character.");
             if (!CheckIsAllCharactersAreNumber(value))
                 throw new IncorrectJulianFormatException("All characters are should be number.");
-            string reverseValue = string.Join("",value.Reverse());
-            int dayValue = string.Join("", reverseValue.Take(3)).AsInteger();
-            int yearValue = string.Join("",reverseValue.Skip(3).Take(2)).AsInteger();
-            int centuryValue = string.Join("", reverseValue.Skip(5)).AsInteger();
+            
+            int dayValue = string.Join("", value.TakeLast(3)).AsInteger();
+            int yearValue = string.Join("", value.SkipLast(3).Take(2)).AsInteger();
+            int centuryValue = string.Join("", value.SkipLast(5)).AsInteger();
             if (dayValue > 366)
                 throw new DayGreaterThan366Exception();
             if (yearValue < 1)
