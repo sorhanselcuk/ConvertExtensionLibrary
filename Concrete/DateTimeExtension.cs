@@ -8,14 +8,34 @@ namespace ConvertExtensionLibrary.Concrete
     {
         public static DateTime FromJulianDate(this string value)
         {
-            int year = string.Join("", value.Take(4)).AsInteger();
-            int day = string.Join("", value.Skip(4)).AsInteger();
-            if (day > 365)
-                throw new DayGreaterThan365Exception();
-            if (day < 1)
+            if (value.Length < 6)
+                throw new IncorrectJulianFormatException("Julian date format should be minimum 6 character.");
+            if (!CheckIsAllCharactersAreNumber(value))
+                throw new IncorrectJulianFormatException("All characters are should be number.");
+            string reverseValue = string.Join("",value.Reverse());
+            int dayValue = string.Join("", reverseValue.Take(3)).AsInteger();
+            int yearValue = string.Join("",reverseValue.Skip(3).Take(2)).AsInteger();
+            int centuryValue = string.Join("", reverseValue.Skip(5)).AsInteger();
+            if (dayValue > 366)
+                throw new DayGreaterThan366Exception();
+            if (yearValue < 1)
                 throw new DayLessThan1Exception();
-            DateTime resultDateTime = new DateTime(year, 1, 1).AddDays((day - 1));
+            int year = ((19 + centuryValue) * 100) + yearValue;
+
+            DateTime resultDateTime = new DateTime(year, 1, 1).AddDays((dayValue - 1));
             return resultDateTime;
+        }
+
+        private static bool CheckIsAllCharactersAreNumber(string value)
+        {
+            foreach(var character in value)
+            {
+                if(character < 0 || character > 9)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
